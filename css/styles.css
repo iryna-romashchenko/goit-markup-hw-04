@@ -17,6 +17,7 @@
     --secondary-border-color: #eeeeee;
     --order-background: #C4C4C4;
     --border-color: #ECECEC;
+    --icon-fill: rgba(175, 177, 184, 1);
 }
 
 body {
@@ -291,10 +292,10 @@ ul {
 /* --------Clients------- */
 
 .clients{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
-    align-items: center;
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .clients-title{
@@ -305,11 +306,42 @@ ul {
         line-height: 1.17;
         margin-bottom: 50px;
         margin-top: 0;
+        letter-spacing: 0.03em;
 }
-.clients .client-item:not(:last-child){
-    margin-right: 30px;
+.clients-list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
+.button-client{
+    display: flex;
+    background-color: var(--button-color);
+    border: none;
+    width: 170px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.button-client .button-icon{
+    width: 106px;
+    height: 60px;
+    margin: 10px 32px;
+    fill: var(--icon-fill);
+}
+.clients-item{
+    display: inline-flex;
+    width: 170px;
+    height: 92px;
+    /* background-color: #C4C4C4; */
+    border-radius: 4px;
+}
+ .clients-list .clients-item:not(:last-child){
+    margin-right: 30px; 
+} 
+/* 
 .clients-link{
     display: flex;
     width: 170px;
@@ -317,14 +349,10 @@ ul {
     justify-content: center;
     align-items: center;
     
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
-    
     fill: var(--icon-color);
     
-    }
-    
-        .clients-link:hover,
+    } */
+      .clients-link:hover,
         .clients-link:focus {
         fill: var(--accent-color);
         border: 1px solid var(--accent-color);
