@@ -74,6 +74,11 @@ header {
     margin-left: 50px;
 }
 
+.contacts .contact-nav:hover,
+.contacts .contact-nav:focus{
+color: var(--accent-color);
+
+}
 .contact-link,
 link {
     color: var(--primary-text-color);
@@ -85,7 +90,7 @@ link {
 
 .contacts a:hover,
 .contacts a:focus {
-    color: var(--accent-color);
+color: var(--accent-color);
 }
 
 .contact-nav{
@@ -343,12 +348,18 @@ ul {
 
 .button-client{
     display: flex;
-    background-color: var(--button-color);
-    border: none;
+    background-color: var(--primary-white-color);
+    border: 1px solid var(--icon-fill);
     width: 170px;
     border-radius: 4px;
     cursor: pointer;
     margin: 0;
+}
+
+.button-client:hover,
+.button-client:focus{
+fill: var(--accent-color);
+border: 1px solid var(--accent-color);
 }
 
 .button-icon{
@@ -357,46 +368,23 @@ ul {
 .button-client .button-icon{
     width: 106px;
     height: 60px;
-    margin: 10px 32px;
+    margin: 16px 32px;
     fill: var(--icon-fill);
 }
 .clients-item{
     display: inline-flex;
     width: 170px;
     height: 92px;
-    /* background-color: #C4C4C4; */
     border-radius: 4px;
 }
  .clients-list .clients-item:not(:last-child){
     margin-right: 30px; 
 } 
-/* 
-.clients-link{
-    display: flex;
-    width: 170px;
-    height: 92px;
-    justify-content: center;
-    align-items: center;
-    
-    fill: var(--icon-color);
-    
-    } */
-      .clients-link:hover,
-        .clients-link:focus {
+
+      .button-icon:hover,
+        .button-icon:focus {
         fill: var(--accent-color);
-        border: 1px solid var(--accent-color);
         }
-
-
-/* .clients-item{
-    /* display: inline-flex;
-    align-items: center;
-    border: 1px solid #AFB1B8;
-    width: 170px;
-    height: 92px;
-    /* width: calc(100% -5*30/6); */
-    margin-right: 29px;
-*/
 
 
 /* filters */
