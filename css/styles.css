@@ -155,7 +155,7 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: var(--order-background);
+    /* background-color: var(--order-background); */
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -185,8 +185,8 @@ ul {
     min-width: 200px;
     height: 50px;
     font-family: inherit;
-    color: var(--title-text-color);
-    background-color: var(--button-color);
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -355,22 +355,25 @@ ul {
     cursor: pointer;
     margin: 0;
 }
+/* -------check-------- */
 
-.button-client:hover,
+/* .button-client:hover,
 .button-client:focus{
 fill: var(--accent-color);
-border: 1px solid var(--accent-color);
-}
+} */
 
-.button-icon{
-    justify-content: center;
-}
-.button-client .button-icon{
+/* .button-icon:hover,
+.button-icon:focus{
+fill: var(--accent-color);
+} */
+
+/* .button-icon{
     width: 106px;
-    height: 60px;
+    height: 60px; 
     margin: 16px 32px;
     fill: var(--icon-fill);
-}
+    justify-content: center;} */
+
 .clients-item{
     display: inline-flex;
     width: 170px;
@@ -379,17 +382,10 @@ border: 1px solid var(--accent-color);
 }
  .clients-list .clients-item:not(:last-child){
     margin-right: 30px; 
-} 
-
-      .button-icon:hover,
-        .button-icon:focus {
-        fill: var(--accent-color);
-        }
-
 
 /* filters */
 
-.filters {
+.filters{
     padding-top: 94px;
     padding-bottom: 94px;
 }
