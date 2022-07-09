@@ -199,7 +199,7 @@ ul {
 
 /* order buttons */
 
-.button.primary {
+/* .button.primary {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
@@ -207,13 +207,13 @@ ul {
 .button.secondary {
     color: var(--accent-color);
     background-color: var(--primary-white-color);
-}
+} */
 
-.button:hover,
+/* .button:hover,
 .button:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-}
+} */
 
 /* direction and team */
 
