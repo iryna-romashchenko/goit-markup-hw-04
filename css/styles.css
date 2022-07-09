@@ -325,6 +325,16 @@ ul {
     margin: 0;
 }
 
+.button-client:hover{
+    fill: #2196F3;
+}
+.button-icon:hover{
+    fill: red;
+}
+
+.button-icon{
+    justify-content: center;
+}
 .button-client .button-icon{
     width: 106px;
     height: 60px;
@@ -407,8 +417,6 @@ ul {
 .filters-nav {
     display: flex;
     justify-content: center;
-    /* margin-left: 295px; */
-    /* margin-top: 94px; */
     margin-bottom: 50px;
 }
 
@@ -450,6 +458,12 @@ ul {
     margin-top: 0;
 }
 
+
+.samples:hover,
+.samples:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .samples img {
     display: block;
 }
@@ -457,7 +471,6 @@ ul {
 .sample-description {
     display: block;
     padding: 20px 24px 20px 24px;
-    background-color: ;
     border: 1px solid var(--secondary-border-color);
 }
 
@@ -549,6 +562,7 @@ background-image: url(../images/icons/SVG-light/clock-icon-copy.svg);
 
 /* footer */
 .footer {
+    display: flex;
     margin-top: 0;
     background-color: var(--footer-color);
     padding-top: 60px;
@@ -599,31 +613,27 @@ background-image: url(../images/icons/SVG-light/clock-icon-copy.svg);
     color: var(--primary-white-color);
 }
 .join-us{
-    display: block;
-    align-items: center;
+    margin-left: 70px;
 }
 
 .join-title{
-    box-sizing: inherit;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-white-color);
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
 .join-list{
-    list-style: none;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0;
 }
 
 .social-link{
+    fill: var(--primary-white-color);
     }
 
 
@@ -633,10 +643,18 @@ background-image: url(../images/icons/SVG-light/clock-icon-copy.svg);
     align-items: center;
     width: 44px;
     height: 44px;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
-    fill: var(--icon-color);
+    fill: var(--grey-text-color);
+}
+
+.icon-link:hover,
+.icon-link:focus{
+fill: var(--white-text-color);
+background-color: var(--accent-color);
+border-radius: 50%;
 }
 
 .container {
