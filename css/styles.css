@@ -63,7 +63,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    /* padding: 30px 0; */
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -155,7 +155,7 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: var(--order-background);
+    /* background-color: var(--order-background); */
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
