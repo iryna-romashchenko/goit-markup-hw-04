@@ -102,28 +102,33 @@ display: flex;}
     color: var(--primary-text-color);
  */
 
-.contacts .item+.item {
+.contacts .contact-item+.contact-item {
     margin-left: 50px;
 }
 
-.contacts .contact-nav:hover,
-.contacts .contact-nav:focus {
+/* .contact-item .contact-nav:hover,
+.contact-item .contact-nav:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
+} */
 
+.contact-nav{
+margin-right: 10px;
 }
-
-.contact-link,
-link {
+.contact-link {
     color: var(--primary-text-color);
+    fill: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
     text-decoration: none;
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.contact-link:hover,
+.contact-link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /* .contacts list {
@@ -347,16 +352,24 @@ link {
 .clients-list .clients-item:not(:last-child) {
      margin-right: 30px;
     }
-
+.clients-item{
+    width: 170px;
+}
 .button-client{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     width: 170px;
-    width: 92px;
+    height: 92px;
     border: 1px solid var(--icon-fill);
     fill: var(--icon-fill);
     border-radius: 4px;
+}
+
+.button-client:hover,
+.button-client:focus{
+fill: var(--accent-color);
+border: 1px solid var(--accent-color);
 }
 
 .button-icon{
@@ -366,6 +379,10 @@ link {
     color: var(--icon-fill);
     justify-content: center;
 }
+
+/* .button-icon:hover{
+fill: var(--accent-color);
+} */
  
 /* filters */
 
@@ -393,8 +410,8 @@ link {
 
 .filter:hover,
 .filter:focus {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
+color: var(--primary-white-color);
+background-color: var(--accent-color);
 }
 
 .filter-title {
@@ -497,9 +514,9 @@ link {
 .feature::before {
     display: block;
     content: "";
+    width: 270px;
     height: 120px;
     margin-bottom: 30px;
-    
     background-repeat:no-repeat;
     background-size: 70px;
     background-position: center;
